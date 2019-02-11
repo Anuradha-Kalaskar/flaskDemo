@@ -1,0 +1,31 @@
+{% extends 'layout.html' 	%}
+
+
+{% block body %}
+	<div class='container'>
+		<form method="POST" action="">
+			<fieldset>
+				<legend>Register</legend>
+				<div class='form-group'>
+				Enter First Name  : <input type='text' class='form-control' name='fname' >
+				</div>
+				<div class='form-group'>
+				Enter Last Name  : <input type='text' class='form-control' name='lname' />
+				</div>
+				<div class='form-group'>
+				Enter Email Id  : <input type='email' class='form-control' name='name' required>
+				</div>
+				<div class='form-group'>
+				Enter Password  : <input type='password' class='form-control' name='password' required>
+				</div>
+				<div class='form-group'>
+				Enter Confirm_Password  :<input type='password' class='form-control' name='password' required>
+				</div>
+			
+			
+				<button class='btn-btn-primary' input type="Submit">Submit</button>
+
+			</fieldset>
+		</form>
+	</div>
+{% endblock %}
